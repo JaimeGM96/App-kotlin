@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Prueba Kotlin</string>
+    <string name="btn">INICIAR SESION</string>
+    <string name="textoInicial">Introduce tu login y password</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="volver">Volver</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="email">Email</string>
+    <string name="telefono">Telefono</string>
+    <string name="userName">Usuario</string>
+    <string name="user_name">Nombre de usuario</string>
+    <string name="tv_password">Contraseña</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
