@@ -1,4 +1,4 @@
-package com.example.jaime.pruebakotlin.Activities
+package com.example.jaime.pruebakotlin.view.adapters
 
 import android.content.Context
 import android.graphics.Color
@@ -12,6 +12,7 @@ import android.widget.TextView
 import com.example.jaime.pruebakotlin.Modelo.BorderedCircleTransform
 import com.example.jaime.pruebakotlin.Modelo.Result
 import com.example.jaime.pruebakotlin.R
+import com.example.jaime.pruebakotlin.view.fragments.InfoUserFragment
 import com.squareup.picasso.Picasso
 import java.util.*
 
@@ -19,10 +20,10 @@ import java.util.*
  * Created by jaime on 19/3/18.
  */
 
-class Adaptador : RecyclerView.Adapter<Adaptador.ViewHolder>() {
-    var list: List<Result> = ArrayList()
-    lateinit var context: Context
-    lateinit var fragmentManager: FragmentManager
+class UserListAdapter : RecyclerView.Adapter<UserListAdapter.ViewHolder>() {
+    private var list: List<Result> = ArrayList()
+    private lateinit var context: Context
+    private lateinit var fragmentManager: FragmentManager
 
     fun Adaptador(list: List<Result>, context: Context, fragmentManager: FragmentManager){
         this.list = list
@@ -45,9 +46,9 @@ class Adaptador : RecyclerView.Adapter<Adaptador.ViewHolder>() {
     }
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val nombre = view.findViewById(R.id.nombreUsuario) as TextView
-        val apellido = view.findViewById(R.id.apellidoUsuario) as TextView
-        val imagen = view.findViewById(R.id.imagenUsuario) as ImageView
+        val nombre = view.findViewById(R.id.userName) as TextView
+        val apellido = view.findViewById(R.id.userLastname) as TextView
+        val imagen = view.findViewById(R.id.userImage) as ImageView
         lateinit var fragmentManager: FragmentManager
 
         fun bind(user:Result, context: Context, fragmentManager: FragmentManager){

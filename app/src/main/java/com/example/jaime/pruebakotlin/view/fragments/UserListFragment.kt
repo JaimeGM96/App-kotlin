@@ -1,4 +1,4 @@
-package com.example.jaime.pruebakotlin.Activities
+package com.example.jaime.pruebakotlin.view.fragments
 
 import android.content.Context
 import android.os.Bundle
@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.jaime.pruebakotlin.view.adapters.UserListAdapter
 import com.example.jaime.pruebakotlin.Modelo.ApiResponse
 import com.example.jaime.pruebakotlin.Modelo.Result
 import com.example.jaime.pruebakotlin.R
@@ -15,8 +16,8 @@ import com.example.jaime.pruebakotlin.Rest.ApiClient
 import retrofit2.Call
 import retrofit2.Callback
 
-class UsersFragment : Fragment() {
-    private val mAdapter : Adaptador = Adaptador()
+class UserListFragment : Fragment() {
+    private val mAdapter : UserListAdapter = UserListAdapter()
     lateinit var mRecyclerView: RecyclerView
     internal lateinit var context: Context
     private lateinit var listener: OnUserSelected
@@ -58,8 +59,8 @@ class UsersFragment : Fragment() {
     }
 
     companion object {
-        fun newInstance(): UsersFragment {
-            val fragment = UsersFragment()
+        fun newInstance(): UserListFragment {
+            val fragment = UserListFragment()
             return fragment
         }
     }

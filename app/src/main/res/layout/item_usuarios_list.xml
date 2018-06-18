@@ -8,8 +8,8 @@
     android:layout_height="wrap_content"
     android:layout_margin="10dp">
 
-    <ImageView
-        android:id="@+id/imagenUsuario"
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/userImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
@@ -17,28 +17,28 @@
         android:layout_marginRight="10dp"/>
 
     <TextView
-        android:id="@+id/nombreUsuario"
+        android:id="@+id/userName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textSize="20sp"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/imagenUsuario"
-        android:layout_toEndOf="@+id/imagenUsuario"
+        android:layout_toRightOf="@+id/userImage"
+        android:layout_toEndOf="@+id/userImage"
         tools:text= "Nombre" />
 
     <TextView
-        android:id="@+id/apellidoUsuario"
+        android:id="@+id/userLastname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="15sp"
-        android:layout_below="@+id/nombreUsuario"
-        android:layout_toRightOf="@+id/imagenUsuario"
-        android:layout_toEndOf="@+id/imagenUsuario"
+        android:layout_below="@+id/userName"
+        android:layout_toRightOf="@+id/userImage"
+        android:layout_toEndOf="@+id/userImage"
         tools:text = "Apellido"/>
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/iv_arrow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"

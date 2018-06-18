@@ -11,7 +11,7 @@ import retrofit2.Retrofit
 class ApiClient {
     val BASE_URL = "https://randomuser.me/api/"
 
-    val URL_API = "localhost:8000/api/"
+    val URL_API = "http://localhost:8000/api/"
 
     fun getClient(): ApiInterface {
         val retrofit = Retrofit.Builder()

@@ -15,6 +15,6 @@ interface ApiInterface {
     @GET("?results=20")
     fun getUsers(@Query("numUsers") numUsers: String): Call<ApiResponse>
 
-    @GET("?grupo=1")
+    @GET("?group=1")
     fun getStudents(@Query("numUsers") numUsers: String): Call<ApiResponseSchool>
 }

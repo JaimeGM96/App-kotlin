@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     android:id="@+id/content_main"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,66 +7,58 @@
     android:background="@color/colorPrimary"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.jaime.pruebakotlin.Activities.LoginActivity">
+    android:orientation="vertical"
+    tools:context="com.example.jaime.pruebakotlin.view.activities.LoginActivity">
 
-    <EditText
-        android:id="@+id/login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white" />
-
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="170dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white" />
-
-    <Button
-        android:id="@+id/btn"
-        android:layout_width="340dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="79dp"
-        android:background="@color/white"
-        android:shadowColor="@color/black"
-        android:text="@string/btn" />
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="@dimen/main_logo_dimen"
+        android:layout_height="@dimen/main_logo_dimen"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/tv_user_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/login"
-        android:layout_alignStart="@+id/login"
+        android:layout_marginLeft="@dimen/login_elements_margin"
         android:text="@string/user_name"
         android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/et_user_name"
+        android:layout_width="@dimen/et_width"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_elements_margin"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
 
     <TextView
         android:id="@+id/tv_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/password"
-        android:layout_alignStart="@+id/login"
+        android:layout_marginLeft="@dimen/login_elements_margin"
         android:text="@string/tv_password"
         android:textColor="@color/white" />
 
-    <ImageView
-        android:id="@+id/iv_logo"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="37dp"
-        app:srcCompat="@drawable/logo" />
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="@dimen/et_width"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_elements_margin"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="@dimen/btn_login_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/btn_login_margin"
+        android:background="@color/white"
+        android:shadowColor="@color/black"
+        android:text="@string/btn_login" />
+
+</LinearLayout>

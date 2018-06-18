@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="text_margin">16dp</dimen>
+    <dimen name="main_logo_dimen">250dp</dimen>
+    <dimen name="btn_login_width">340dp</dimen>
+    <dimen name="login_elements_margin">110dp</dimen>
+    <dimen name="et_width">150dp</dimen>
+    <dimen name="btn_login_margin">75dp</dimen>
 </resources>

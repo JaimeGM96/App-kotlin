@@ -5,9 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.jaime.pruebakotlin.Activities.ShowUsersActivity">
+    tools:context="com.example.jaime.pruebakotlin.view.activities.UserListActivity">
     <fragment
-        class="com.example.jaime.pruebakotlin.Activities.UsersFragment"
+        class="com.example.jaime.pruebakotlin.view.fragments.UserListFragment"
         android:id="@+id/users_container"
         android:layout_width="300dp"
         android:layout_height="match_parent"

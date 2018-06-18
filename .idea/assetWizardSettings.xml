@@ -13,14 +13,15 @@
                       <PersistentState>
                         <option name="children">
                           <map>
-                            <entry key="actionbar">
+                            <entry key="launcherLegacy">
                               <value>
                                 <PersistentState>
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="$USER_HOME$/Pictures/logo.png" />
-                                      <entry key="outputName" value="logo" />
+                                      <entry key="iconShape" value="NONE" />
+                                      <entry key="imageAsset" value="$USER_HOME$/Pictures/logo_cristo_rey_pequeño.png" />
+                                      <entry key="outputName" value="main_logo_2" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -30,7 +31,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputIconType" value="ACTIONBAR" />
+                            <entry key="outputIconType" value="LAUNCHER_LEGACY" />
                           </map>
                         </option>
                       </PersistentState>
