@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import com.example.jaime.pruebakotlin.model.SchoolResult
+import com.example.jaime.pruebakotlin.model.schoolAPI.SchoolResult
 import com.example.jaime.pruebakotlin.R
 import java.util.*
 
@@ -47,7 +47,7 @@ class UserListAdapter : RecyclerView.Adapter<UserListAdapter.ViewHolder>() {
         val imagen = view.findViewById(R.id.userImage) as ImageView
         lateinit var fragmentManager: FragmentManager
 
-        fun bind(user:SchoolResult, context: Context, fragmentManager: FragmentManager){
+        fun bind(user: SchoolResult, context: Context, fragmentManager: FragmentManager){
             nombre.text = user.student.name
             apellido.text = user.student.lastName
             //Picasso.with(context).load(user.picture.large).transform(BorderedCircleTransform(0, Color.BLACK)).into(imagen)

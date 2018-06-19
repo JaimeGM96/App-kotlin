@@ -1,4 +1,4 @@
-package com.example.jaime.pruebakotlin.model
+package com.example.jaime.pruebakotlin.model.randomUserAPI
 
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable

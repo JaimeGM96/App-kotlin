@@ -9,10 +9,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.jaime.pruebakotlin.view.adapters.UserListAdapter
-import com.example.jaime.pruebakotlin.model.ApiResponseSchool
-import com.example.jaime.pruebakotlin.model.SchoolResult
+import com.example.jaime.pruebakotlin.model.schoolAPI.ApiResponseSchool
+import com.example.jaime.pruebakotlin.model.schoolAPI.SchoolResult
 import com.example.jaime.pruebakotlin.R
-import com.example.jaime.pruebakotlin.Rest.ApiClient
+import com.example.jaime.pruebakotlin.rest.ApiClient
 import retrofit2.Call
 import retrofit2.Callback
 

@@ -1,5 +1,6 @@
-package com.example.jaime.pruebakotlin.model
+package com.example.jaime.pruebakotlin.model.schoolAPI
 
+import com.example.jaime.pruebakotlin.model.schoolAPI.Group
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 

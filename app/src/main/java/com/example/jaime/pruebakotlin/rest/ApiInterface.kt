@@ -1,7 +1,7 @@
-package com.example.jaime.pruebakotlin.Rest
+package com.example.jaime.pruebakotlin.rest
 
-import com.example.jaime.pruebakotlin.model.ApiResponse
-import com.example.jaime.pruebakotlin.model.ApiResponseSchool
+import com.example.jaime.pruebakotlin.model.randomUserAPI.ApiResponse
+import com.example.jaime.pruebakotlin.model.schoolAPI.ApiResponseSchool
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query

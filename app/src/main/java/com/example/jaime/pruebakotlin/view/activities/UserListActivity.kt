@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
 import com.example.jaime.pruebakotlin.view.fragments.UserListFragment
-import com.example.jaime.pruebakotlin.model.SchoolResult
+import com.example.jaime.pruebakotlin.model.schoolAPI.SchoolResult
 import com.example.jaime.pruebakotlin.R
 
 

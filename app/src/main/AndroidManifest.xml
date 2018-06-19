@@ -23,6 +23,9 @@
         </activity>
         <activity android:name=".view.activities.UserListActivity" />
         <activity android:name=".view.activities.NFCReaderActivity" />
+        <activity android:name=".view.activities.ScanBar_codeActivity"/>
+        <activity android:name=".view.activities.BarcodeCaptureActivity"/>
+        <activity android:name=".view.activities.ScannerViewActivity"/>
     </application>
 
 </manifest>

@@ -8,9 +8,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.jaime.pruebakotlin.model.BorderedCircleTransform
-import com.example.jaime.pruebakotlin.model.Result
+import com.example.jaime.pruebakotlin.model.randomUserAPI.Result
 import com.example.jaime.pruebakotlin.R
 import com.squareup.picasso.Picasso
+import kotlinx.android.synthetic.main.fragment_info_user.*
 
 class InfoUserFragment : Fragment() {
 
@@ -40,7 +41,7 @@ class InfoUserFragment : Fragment() {
     }
 
     companion object {
-        fun newInstance(user:Result): InfoUserFragment {
+        fun newInstance(user: Result): InfoUserFragment {
             val fragment = InfoUserFragment()
             val bundle = Bundle()
             bundle.putSerializable("object", user)

@@ -27,7 +27,11 @@ class LoginActivity : AppCompatActivity() {
 
     private fun initialize() {
         btn_login.setOnClickListener {
-            checkLogin()
+            //checkLogin()
+            val intent = Intent(applicationContext, BarcodeCaptureActivity::class.java)
+            startActivityForResult(intent, BARCODE_READER_REQUEST_CODE)
+            /*val intent = Intent(applicationContext, ScanBar_codeActivity::class.java)
+            startActivity(intent)*/
         }
 
         Picasso.with(this).load(R.mipmap.main_logo).into(iv_logo)
@@ -46,7 +50,7 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    /*override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         if (requestCode == BARCODE_READER_REQUEST_CODE) {
             if (resultCode == CommonStatusCodes.SUCCESS) {
                 if (data != null) {
@@ -54,13 +58,13 @@ class LoginActivity : AppCompatActivity() {
                     val p = barcode.cornerPoints
                     mResultTextView.text = barcode.displayValue
                 } else
-                    //mResultTextView.setText(R.string.no_barcode_captured)
+                    mResultTextView.setText(R.string.no_barcode_captured)
             } else
-                /*Log.e(LOG_TAG, String.format(getString(R.string.barcode_error_format),
-                        CommonStatusCodes.getStatusCodeString(resultCode)))*/
+                Log.e(LOG_TAG, String.format(getString(R.string.barcode_error_format),
+                        CommonStatusCodes.getStatusCodeString(resultCode)))
         } else
             super.onActivityResult(requestCode, resultCode, data)
-    }*/
+    }
 
     companion object {
         private val LOG_TAG = LoginActivity::class.java.simpleName

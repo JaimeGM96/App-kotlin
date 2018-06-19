@@ -1,4 +1,4 @@
-package com.example.jaime.pruebakotlin.Rest
+package com.example.jaime.pruebakotlin.rest
 
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.Retrofit
