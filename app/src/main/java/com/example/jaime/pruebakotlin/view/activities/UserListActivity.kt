@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
 import com.example.jaime.pruebakotlin.view.fragments.UserListFragment
-import com.example.jaime.pruebakotlin.Modelo.Result
+import com.example.jaime.pruebakotlin.model.SchoolResult
 import com.example.jaime.pruebakotlin.R
 
 
@@ -19,7 +19,7 @@ class UserListActivity : AppCompatActivity(), UserListFragment.OnUserSelected {
         }
     }
 
-    override fun onUserSelected(user: Result) {
+    override fun onUserSelected(user: SchoolResult) {
         Toast.makeText(this, "Objeto seleccionado",
                 Toast.LENGTH_SHORT).show()
     }

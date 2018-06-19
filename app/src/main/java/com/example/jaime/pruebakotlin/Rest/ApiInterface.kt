@@ -1,10 +1,9 @@
 package com.example.jaime.pruebakotlin.Rest
 
-import com.example.jaime.pruebakotlin.Modelo.ApiResponse
-import com.example.jaime.pruebakotlin.Modelo.ApiResponseSchool
+import com.example.jaime.pruebakotlin.model.ApiResponse
+import com.example.jaime.pruebakotlin.model.ApiResponseSchool
 import retrofit2.Call
 import retrofit2.http.GET
-import retrofit2.http.Path
 import retrofit2.http.Query
 
 
@@ -17,4 +16,7 @@ interface ApiInterface {
 
     @GET("?group=1")
     fun getStudents(@Query("numUsers") numUsers: String): Call<ApiResponseSchool>
+
+    @GET("start/1")
+    fun startClass(): Call<ApiResponseSchool>
 }

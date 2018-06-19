@@ -9,8 +9,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.jaime.pruebakotlin.view.adapters.UserListAdapter
-import com.example.jaime.pruebakotlin.Modelo.ApiResponse
-import com.example.jaime.pruebakotlin.Modelo.Result
+import com.example.jaime.pruebakotlin.model.ApiResponseSchool
+import com.example.jaime.pruebakotlin.model.SchoolResult
 import com.example.jaime.pruebakotlin.R
 import com.example.jaime.pruebakotlin.Rest.ApiClient
 import retrofit2.Call
@@ -26,22 +26,31 @@ class UserListFragment : Fragment() {
         var view = inflater!!.inflate(R.layout.fragment_users, container, false)
         mRecyclerView = view.findViewById<RecyclerView>(R.id.rvUserList) as RecyclerView
         val apiClient = ApiClient()
-        val apiInterface = apiClient.getClient()
-        val call = apiInterface.getUsers("20")
-        call?.enqueue(object : Callback<ApiResponse> {
-            override fun onResponse(call: Call<ApiResponse>, response: retrofit2.Response<ApiResponse>) {
+        val apiInterface = apiClient.getStundent()
+        val call = apiInterface.startClass()
+        call?.enqueue(object : Callback<ApiResponseSchool> {
+            override fun onResponse(call: Call<ApiResponseSchool>, response: retrofit2.Response<ApiResponseSchool>) {
                 if (response != null) {
-                    var datos: List<Result> = response.body()!!.results
+                    var datos: List<SchoolResult> = response.body()!!.results
+                    println(response)
+                    println(response.body())
+                    println("asdasdasdasda")
+                    println(datos)
                     setUpRecyclerView(datos)
+                    println(response)
+                    println(response.body())
+                    println("asdasdasdasda")
+                    println(datos)
                 }
             }
-            override fun onFailure(call: Call<ApiResponse>, t: Throwable) {
+            override fun onFailure(call: Call<ApiResponseSchool>, t: Throwable) {
+                println("asdasdasdasdasdasdasdasdasdasdgfgafgfa")
             }
         })
         return view
     }
 
-    fun setUpRecyclerView(datos: List<Result>){
+    fun setUpRecyclerView(datos: List<SchoolResult>){
         mRecyclerView.layoutManager = LinearLayoutManager(context)
         mAdapter.Adaptador(datos, context, fragmentManager)
         mRecyclerView.setHasFixedSize(true)
@@ -66,6 +75,6 @@ class UserListFragment : Fragment() {
     }
 
     interface OnUserSelected {
-        fun onUserSelected(user: Result)
+        fun onUserSelected(user: SchoolResult)
     }
 }

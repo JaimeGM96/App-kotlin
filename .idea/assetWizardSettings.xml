@@ -20,8 +20,8 @@
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
                                       <entry key="iconShape" value="NONE" />
-                                      <entry key="imageAsset" value="$USER_HOME$/Pictures/logo_cristo_rey_pequeño.png" />
-                                      <entry key="outputName" value="main_logo_2" />
+                                      <entry key="imageAsset" value="$USER_HOME$/Pictures/default-user-image.png" />
+                                      <entry key="outputName" value="dafault_user" />
                                     </map>
                                   </option>
                                 </PersistentState>

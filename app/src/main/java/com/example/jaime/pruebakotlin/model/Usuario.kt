@@ -1,4 +1,4 @@
-package com.example.jaime.pruebakotlin.Modelo
+package com.example.jaime.pruebakotlin.model
 
 import java.io.Serializable
 

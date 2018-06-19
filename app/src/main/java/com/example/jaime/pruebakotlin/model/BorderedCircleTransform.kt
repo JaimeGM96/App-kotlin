@@ -1,4 +1,4 @@
-package com.example.jaime.pruebakotlin.Modelo
+package com.example.jaime.pruebakotlin.model
 
 import android.graphics.*
 import com.squareup.picasso.Transformation
